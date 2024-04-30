@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jay的个人主页</title>
+    <title>Jay的个人简历</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f5f5f5;
+            color: #333;
         }
         .container {
             max-width: 800px;
@@ -23,52 +24,61 @@
             text-align: center;
             color: #333;
         }
-        .info {
+        img {
+            display: block;
+            margin: auto;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+        .section {
             margin-top: 30px;
         }
-        .info-item {
+        .section h2 {
+            color: #555;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
             margin-bottom: 10px;
         }
-        .evaluation {
-            margin-top: 30px;
-        }
-        .evaluation p {
+        .section p {
             margin-bottom: 10px;
+        }
+        .achievement {
+            margin-left: 20px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>欢迎来到Jay的个人主页</h1>
-        
-        <div class="info">
-            <h2>个人信息</h2>
-            <div class="info-item">
-                <strong>姓名：</strong> Jay
-            </div>
-            <div class="info-item">
-                <strong>年龄：</strong> 18
-            </div>
-            <div class="info-item">
-                <strong>籍贯：</strong> China
-            </div>
-            <div class="info-item">
-                <strong>邮箱：</strong> <a href="mailto:zzhui2001@163.com">zzhui2001@163.com</a>
-            </div>
-            <div class="info-item">
-                <strong>院校：</strong> 天津医科大学
-            </div>
-            <div class="info-item">
-                <strong>专业：</strong> 医学技术
-            </div>
+        <img src="your_profile_picture.jpg" alt="Profile Picture">
+        <h1>Jay</h1>
+        <div class="section">
+            <h2>个人基本信息</h2>
+            <p>姓名：Jay</p>
+            <p>年龄：18</p>
+            <p>籍贯：China</p>
+            <p>邮箱：<a href="mailto:zzhui2001@163.com">zzhui2001@163.com</a></p>
         </div>
         
-        <div class="evaluation">
-            <h2>个人评价</h2>
-            <p>1. 热爱祖国，忠于信仰，拥护党的领导</p>
-            <p>2. 刻苦好学，自学能力强，时间利用能力强</p>
-            <p>3. 乐观开朗，热爱生活</p>
-            <p>4. 善于交际，沟通能力强</p>
+        <div class="section">
+            <h2>科研经历</h2>
+            <p>1. 在XX大学参与了XX项目的研究，负责数据收集和分析工作。</p>
+            <p>2. 在XX实验室担任助理研究员，主要从事XX领域的研究。</p>
+        </div>
+        
+        <div class="section">
+            <h2>科研成果</h2>
+            <div class="achievement">
+                <h3>论文发表</h3>
+                <p>1. XXXX论文，发表于《XX期刊》，2023年。</p>
+                <p>2. XXXX论文，发表于《XX会议》，2022年。</p>
+            </div>
+            <div class="achievement">
+                <h3>专利申请</h3>
+                <p>1. XXXX专利，申请号XXXXXXX。</p>
+            </div>
         </div>
     </div>
 </body>
