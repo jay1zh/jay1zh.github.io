@@ -6,7 +6,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 --*/
 body{
 	background:#fff;
-	/* font-family:'Times New Roman','Source Sans Pro','Arial','Helvetica', sans-serif; */
 	font-family:'Source Sans Pro','Arial','Helvetica', sans-serif;
 }
 body a{
@@ -26,7 +25,6 @@ h1,h2,h3,h4,h5,h6,label,p{
 }
 .header {
 	padding: 0 1em;
-/* 	border-bottom:3px solid #6d6d6d; */
 }
 .logo {
 	float:left;
@@ -80,6 +78,8 @@ ul.social-in li  i.message:hover{
 ul.social-in li  i.youtube:hover{
 	background-position:-156px -67px;
 }
+
+/* 顶部导航栏的样式 */
 .top-nav {
     display: flex;
     justify-content: center; /* 水平居中对齐 */
@@ -115,7 +115,7 @@ ul.social-in li  i.youtube:hover{
     color: #000; /* 活动链接颜色 */
 }
 
-/* Effect 4: bottom border enlarge */
+/* 悬停和焦点效果 */
 .top-nav ul li a::after {
     position: absolute;
     top: 100%;
@@ -141,7 +141,7 @@ ul.social-in li  i.youtube:hover{
     display: none;
 }
 
-/*--responsive media-quries--*/
+/* 响应式媒体查询 */
 @media(max-width:768px){
     .top-nav ul {
         display: none;
@@ -181,8 +181,26 @@ ul.social-in li  i.youtube:hover{
     }
 }
 
-
+/* 内容和页脚样式 */
+#container {
+    width: 100%;
+    max-width: 1200px; /* 根据需要调整最大宽度 */
+    margin: 0 auto;
 }
+
+#content {
+    margin: 0 auto;
+    width: 80%; /* 调整宽度以适应您的需求 */
+    max-width: 1200px;
+    text-align: center; /* 可选，如果需要居中对齐文本 */
+}
+
+#footer {
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* 其他样式 */
 .search{
 	float:right;
 	position:relative;
@@ -191,7 +209,6 @@ ul.social-in li  i.youtube:hover{
 }
 .header-bottom {
 	float:right;
-/* 	padding: 1em 0;	 */
 }
 .search input[type="text"] {
 	outline: none;
