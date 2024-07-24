@@ -1,77 +1,73 @@
 <!DOCTYPE html>
-<html>
-
-
+<html lang="en">
 <head>
-<title>Home | Feng Liu@TMU </title>
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="js/jquery.min.js"></script>
-<!-- Custom Theme files -->
-<!--theme-style-->
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
-<!--//theme-style-->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Feng,Liu" />
-<meta name="description" content="Feng Liu is currently working as an associate professor at Tianjin Medical University General Hospital, Tianjin Key Laboratory of Functional Imaging. His current research interests include brain science, artificial intelligence, and gene-environment-brain-imaging-behaviour association studies.">
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!--fonts-->
-<link href='http://fonts.lug.ustc.edu.cn/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
-<!--//fonts-->
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
-				<script type="text/javascript">
-					jQuery(document).ready(function($) {
-						$(".scroll").click(function(event){		
-							event.preventDefault();
-							$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-						});
-					});
-					</script>
+    <title>Home | Feng Liu@TMU</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Custom Theme files -->
+    <!--theme-style-->
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!--//theme-style-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Feng,Liu" />
+    <meta name="description" content="Feng Liu is currently working as an associate professor at Tianjin Medical University General Hospital, Tianjin Key Laboratory of Functional Imaging. His current research interests include brain science, artificial intelligence, and gene-environment-brain-imaging-behaviour association studies.">
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!--fonts-->
+    <link href='http://fonts.lug.ustc.edu.cn/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+    <!--//fonts-->
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event){		
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+            });
+        });
 
-</head>
-<body>
-	<!--header-->
-	<!-- <div id="preamble"> </div>
-	<div id="content">
-		<h1 class="title">Feng Liu</h1>
-	</div> -->
-	<div class="container">
-	<div class="header">
-		<!-- <div class="header-top">
-			<div class="logo">
-				<a href="index.html"><img src="Images/MyLogo.png" style="width: 70%;padding-bottom:3%" alt="Feng Liu" ></a>
-			</div>
-			<div class="header-top-on">
-			</div>
-				<div class="clearfix"> </div>
-			</div> -->
-			
-			<div class="header-bottom">
-    <div class="top-nav">
-        <span class="menu"><img src="Images/menu.png" alt="Menu"></span>
-        <p style="text-transform:none;padding-top:2em">
-            <ul style="padding-left: 20px;">
-                <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
-                <li class="nav-item"><a href="Publications.html" class="nav-link">PUBLICATIONS</a></li>
-                <li class="nav-item"><a href="Members.html" class="nav-link active">MEMBERS</a></li>
-                <li class="nav-item"><a href="Service.html" class="nav-link">SERVICE</a></li>
-            </ul>
-        </p>
-        <script>
-            $("span.menu").click(function(){
-                $(".top-nav ul").slideToggle(500, function(){
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const currentLocation = location.href;
+
+            navLinks.forEach(link => {
+                link.classList.remove('active'); // 移除所有链接的active类
+                if (link.href === currentLocation) {
+                    link.classList.add('active'); // 为当前链接添加active类
+                }
+
+                link.addEventListener('click', function() {
+                    navLinks.forEach(link => link.classList.remove('active'));
+                    this.classList.add('active');
                 });
             });
-        </script>
-    </div>
-    <div class="clearfix"></div>
-</div>
-
-
-	</div>
-</div>
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-bottom">
+                <div class="top-nav">
+                    <span class="menu"><img src="Images/menu.png" alt="Menu"></span>
+                    <p style="text-transform:none;padding-top:2em">
+                        <ul style="padding-left: 20px;">
+                            <li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
+                            <li class="nav-item"><a href="Publications.html" class="nav-link">PUBLICATIONS</a></li>
+                            <li class="nav-item"><a href="Members.html" class="nav-link">MEMBERS</a></li>
+                            <li class="nav-item"><a href="Service.html" class="nav-link">SERVICE</a></li>
+                        </ul>
+                    </p>
+                    <script>
+                        $("span.menu").click(function(){
+                            $(".top-nav ul").slideToggle(500, function(){
+                            });
+                        });
+                    </script>
+                </div>
+                <div class="clearfix"></div>
+            </div>
 
 			<div class="container">
     <div class="content">
@@ -191,5 +187,5 @@
     </script>
     <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 </div>
-
+	    </body>
 </html>
