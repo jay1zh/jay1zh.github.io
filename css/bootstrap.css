@@ -1107,8 +1107,9 @@ pre code {
     width: 58.33333333%;
   }
   .col-md-6 {
-    width: 50%;
-  }
+    max-width: 600px; /* 调整这个值以确保宽度合适 */
+    margin: 0 auto;
+}
   .col-md-5 {
     width: 41.66666667%;
   }
