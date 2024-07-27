@@ -3,8 +3,11 @@
 <head>
     <title>Home | Feng Liu@TMU</title>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-    <script src="js/jquery.min.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <script src="js/jquery.min.js"></script>
+    <!-- Custom Theme files -->
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!--//theme-style-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="Feng,Liu" />
@@ -13,8 +16,10 @@
         addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); 
         function hideURLbar(){ window.scrollTo(0,1); } 
     </script>
-    <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=e7e7e7&w=300&t=n&d=bDVjxNPkqCwX9YtRSdJMyeoPiruSxoelAGOOzPTjUZM&co=ffffff&cmo=95d4ee&cmn=ec7a2e&ct=000000'></script>
+	
+    <!--fonts-->
     <link href='http://fonts.lug.ustc.edu.cn/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+    <!--//fonts-->
     <script type="text/javascript" src="js/move-top.js"></script>
     <script type="text/javascript" src="js/easing.js"></script>
     <script type="text/javascript">
@@ -48,7 +53,7 @@
 
         function setViewportHeight() {
             let vh = window.innerHeight * 0.01;
-            document.documentElement.style.setProperty('--vh', `${vh}px`);
+            document.documentElement.style.setProperty('--vh', ${vh}px);
         }
         window.addEventListener('resize', setViewportHeight);
         window.addEventListener('orientationchange', setViewportHeight);
@@ -62,44 +67,6 @@
             .top-nav ul {
                 display: block !important;
             }
-        }
-        .footer {
-            padding: 0 1em 3em;
-            border-top: 3px solid #838383;
-        }
-        .amet-sed h4 {
-            font-size: 1.4em;
-            color: #838383;
-            letter-spacing: 6px;
-            padding: 1em 0 0.6em;
-            text-transform: uppercase;
-        }
-        .footer-top {
-            padding: 2em 0 3em;
-        }
-        .amet-sed {
-            padding: 0px 1em 0 0;
-        }
-        .footer-class {
-            color: #838383;
-            font-size: 1em;
-            text-transform: uppercase;
-        }
-        .footer-class a {
-            color: #000;
-            text-decoration: none;
-        }
-        .footer-class a:hover {
-            color: #838383;
-        }
-        .clearfix::after {
-            content: "";
-            clear: both;
-            display: table;
-        }
-        .col-md-6 {
-            float: left;
-            width: 50%;
         }
     </style>
 </head>
@@ -227,10 +194,11 @@
     </ul>
 </div>
 
-			 <div class="container">
-        <div class="footer">
-            <div class="footer-top" style="text-align: center;">
-                <div class="col-md-6 amet-sed" style="max-width: 50%; text-align: left;">
+			<div class="container">
+    <div class="footer">
+        <div class="footer-top" style="text-align: center;">
+            <div class="footer-content" style="display: flex; justify-content: center; align-items: flex-start; text-align: left; gap: 20px;">
+                <div class="col-md-6 amet-sed" style="max-width: 600px; margin: 0 auto;">
                     <h4>Contact</h4>
                     <i class="line"></i>
                     <p style="text-transform:none; padding-top:2.5em;">
@@ -239,19 +207,25 @@
                         Email: <a href="mailto:fengliu@tmu.edu.cn">fengliu@tmu.edu.cn</a><br>
                     </p>
                 </div>
-                <div class="col-md-6 amet-sed" style="max-width: 50%;">
-                    <div id="clustrmaps" style="padding-top: 2.5em;"></div>
+                <div class="col-md-6" style="max-width: 300px; margin: 0 auto;">
+                    <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=e7e7e7&w=300&t=n&d=bDVjxNPkqCwX9YtRSdJMyeoPiruSxoelAGOOzPTjUZM&co=ffffff&cmo=95d4ee&cmn=ec7a2e&ct=000000'></script>
                 </div>
-                <div class="clearfix"></div>
             </div>
+            <div class="clearfix"></div>
         </div>
     </div>
-    <p class="footer-class" style="text-transform:none; text-align:center;">Copyright &copy; 2024 Feng Liu - Visited <a href="https://www.easycounter.com/" onclick="stc(this, 44)"><img src="https://www.easycounter.com/counter.php?jay01" border="0" alt="HTML Counter"></a> times - Last updated: July 2024.</p>
+</div>
+
+
+
+        <p class="footer-class" style="text-transform:none; text-align:center;">Copyright &copy; 2024 Feng Liu - Visited <a href="https://www.easycounter.com/" onclick="stc(this, 44)"><img src="https://www.easycounter.com/counter.php?jay01" border="0" alt="HTML Counter"></a> times - Last updated: July 2024.</p>
+    </div>
     <script type="text/javascript">
         $(document).ready(function() {
             $().UItoTop({ easingType: 'easeOutQuart' });
         });
     </script>
     <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-</body>
+</div>
+	    </body>
 </html>
