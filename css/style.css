@@ -994,7 +994,7 @@ ul.msg-social {
 
     .footer-top > div {
         max-width: 100%;
-        margin-bottom: 1em; /* 调整这里的数值来改变每个块之间的间距 */
+        margin-bottom: 0.5em; /* 调整这里的数值来改变每个块之间的间距 */
     }
 
     .footer-top > div:last-child {
@@ -1002,11 +1002,11 @@ ul.msg-social {
     }
 
     .footer-top h4 {
-        margin-bottom: 0.5em; /* 调整这里的数值来改变标题和内容之间的间距 */
+        margin-bottom: 0.3em; /* 调整这里的数值来改变标题和内容之间的间距 */
     }
 
     .footer-top p {
-        padding-top: 0.5em; /* 调整这里的数值来减少Contact下方的空白 */
+        padding-top: 0.3em; /* 调整这里的数值来减少Contact下方的空白 */
     }
 
     /* 仅调整Contact和Visitor Map部分的样式 */
@@ -1015,8 +1015,13 @@ ul.msg-social {
     }
 
     .footer-top .amet-sed p {
-        padding-top: 0.5em; /* 调整Contact下方的空白 */
-        margin-bottom: 1em; /* 调整Contact与Visitor Map之间的间距 */
+        padding-top: 0.3em; /* 调整Contact下方的空白 */
+        margin-bottom: 0.5em; /* 调整Contact与Visitor Map之间的间距 */
+    }
+
+    /* 调整Visitor Map与下方图片之间的间距 */
+    .footer-top .amet-sed:last-child {
+        margin-bottom: 0.5em; /* 调整这里的数值来改变Visitor Map与下方图片之间的间距 */
     }
 }
 
