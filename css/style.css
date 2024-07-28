@@ -986,6 +986,40 @@ ul.msg-social {
 	text-indent: 100%;
 	background: url('../images/up.png') no-repeat 0px 0px;
 }
+@media (max-width: 767px) {
+    .footer-top {
+        display: block;
+        text-align: center;
+    }
+
+    .footer-top > div {
+        max-width: 100%;
+        margin-bottom: 1em; /* 调整这里的数值来改变每个块之间的间距 */
+    }
+
+    .footer-top > div:last-child {
+        margin-bottom: 0;
+    }
+
+    .footer-top h4 {
+        margin-bottom: 0.5em; /* 调整这里的数值来改变标题和内容之间的间距 */
+    }
+
+    .footer-top p {
+        padding-top: 0.5em; /* 调整这里的数值来减少Contact下方的空白 */
+    }
+
+    /* 仅调整Contact和Visitor Map部分的样式 */
+    .footer-top .amet-sed {
+        padding-top: 0;
+    }
+
+    .footer-top .amet-sed p {
+        padding-top: 0.5em; /* 调整Contact下方的空白 */
+        margin-bottom: 1em; /* 调整Contact与Visitor Map之间的间距 */
+    }
+}
+
 /*--responsive--*/
 @media(max-width:1440px){
 }
