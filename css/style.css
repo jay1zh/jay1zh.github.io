@@ -165,6 +165,15 @@ ul.social-in li  i.youtube:hover{
 	display: none;
 }
 ----*/
+.section-title {
+    font-size: 24px; /* 设置统一的字体大小 */
+    font-family: 'Times New Roman', Times, serif;
+    color: #C0C0C0; /* 设置字体颜色 */
+    text-align: left; /* 左对齐 */
+    margin-left: 5%; /* 确保与列表的左边距一致 */
+}
+
+
 /*--responsive media-quries--*/
 @media(max-width:768px){
 .top-nav ul{
